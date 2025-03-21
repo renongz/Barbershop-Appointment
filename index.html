@@ -1,50 +1,170 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Barber Shop Appointment</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Home Page -->
-  <section id="home">
-    <h1>Welcome to Our Barber Shop</h1>
-    <p>Haircut Services Available!</p>
-    <button onclick="showBookingPage()">Book an Appointment</button>
-  </section>
-
-  <!-- Booking Page -->
-  <section id="booking" style="display:none;">
-    <h2>Book Your Appointment</h2>
-    <form id="appointmentForm">
-      <label for="name">Full Name:</label>
-      <input type="text" id="name" required>
-      
-      <label for="email">Email:</label>
-      <input type="email" id="email" required>
-      
-      <label for="phone">Phone Number:</label>
-      <input type="text" id="phone" required>
-
-      <label for="date">Preferred Date & Time:</label>
-      <input type="datetime-local" id="date" required>
-
-      <label for="service">Service:</label>
-      <select id="service">
-        <option value="Haircut">Haircut</option>
-      </select>
-
-      <button type="submit">Confirm Appointment</button>
-    </form>
-  </section>
-
-  <!-- Thank You Page -->
-  <section id="thank-you" style="display:none;">
-    <h2>Thank you for your booking!</h2>
-    <p>Your appointment is confirmed.</p>
-  </section>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<nav>
+  <a href="#">
+    <span class="label">Home</span>
+    <box-icon class="icon" name="home" color="white" size="50px"></box-icon>
+    <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+      <g class="pink">
+        <rect x="0" width="6" height="100%" y="-100%" />
+        <rect x="6" width="6" height="100%" y="-100%" />
+        <rect x="12" width="6" height="100%" y="-100%" />
+        <rect x="18" width="6" height="100%" y="-100%" />
+        <rect x="24" width="6" height="100%" y="-100%" />
+        <rect x="30" width="6" height="100%" y="-100%" />
+        <rect x="36" width="6" height="100%" y="-100%" />
+        <rect x="42" width="6" height="100%" y="-100%" />
+        <rect x="48" width="6" height="100%" y="-100%" />
+        <rect x="54" width="6" height="100%" y="-100%" />
+        <rect x="60" width="6" height="100%" y="-100%" />
+        <rect x="66" width="6" height="100%" y="-100%" />
+        <rect x="72" width="6" height="100%" y="-100%" />
+        <rect x="78" width="6" height="100%" y="-100%" />
+        <rect x="84" width="6" height="100%" y="-100%" />
+        <rect x="90" width="6" height="100%" y="-100%" />
+      </g>
+      <g class="blue">
+        <rect x="0" width="6" height="100%" y="100%" />
+        <rect x="6" width="6" height="100%" y="100%" />
+        <rect x="12" width="6" height="100%" y="100%" />
+        <rect x="18" width="6" height="100%" y="100%" />
+        <rect x="24" width="6" height="100%" y="100%" />
+        <rect x="30" width="6" height="100%" y="100%" />
+        <rect x="36" width="6" height="100%" y="100%" />
+        <rect x="42" width="6" height="100%" y="100%" />
+        <rect x="48" width="6" height="100%" y="100%" />
+        <rect x="54" width="6" height="100%" y="100%" />
+        <rect x="60" width="6" height="100%" y="100%" />
+        <rect x="66" width="6" height="100%" y="100%" />
+        <rect x="72" width="6" height="100%" y="100%" />
+        <rect x="78" width="6" height="100%" y="100%" />
+        <rect x="84" width="6" height="100%" y="100%" />
+        <rect x="90" width="6" height="100%" y="100%" />
+      </g>
+    </svg>
+  </a>
+  <a href="#">
+    <span class="label">Code</span>
+    <box-icon class="icon" name="code-alt" color="white" size="50px"></box-icon>
+    <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+      <g class="pink">
+        <rect x="0" width="6" height="100%" y="-100%" />
+        <rect x="6" width="6" height="100%" y="-100%" />
+        <rect x="12" width="6" height="100%" y="-100%" />
+        <rect x="18" width="6" height="100%" y="-100%" />
+        <rect x="24" width="6" height="100%" y="-100%" />
+        <rect x="30" width="6" height="100%" y="-100%" />
+        <rect x="36" width="6" height="100%" y="-100%" />
+        <rect x="42" width="6" height="100%" y="-100%" />
+        <rect x="48" width="6" height="100%" y="-100%" />
+        <rect x="54" width="6" height="100%" y="-100%" />
+        <rect x="60" width="6" height="100%" y="-100%" />
+        <rect x="66" width="6" height="100%" y="-100%" />
+        <rect x="72" width="6" height="100%" y="-100%" />
+        <rect x="78" width="6" height="100%" y="-100%" />
+        <rect x="84" width="6" height="100%" y="-100%" />
+        <rect x="90" width="6" height="100%" y="-100%" />
+      </g>
+      <g class="blue">
+        <rect x="0" width="6" height="100%" y="100%" />
+        <rect x="6" width="6" height="100%" y="100%" />
+        <rect x="12" width="6" height="100%" y="100%" />
+        <rect x="18" width="6" height="100%" y="100%" />
+        <rect x="24" width="6" height="100%" y="100%" />
+        <rect x="30" width="6" height="100%" y="100%" />
+        <rect x="36" width="6" height="100%" y="100%" />
+        <rect x="42" width="6" height="100%" y="100%" />
+        <rect x="48" width="6" height="100%" y="100%" />
+        <rect x="54" width="6" height="100%" y="100%" />
+        <rect x="60" width="6" height="100%" y="100%" />
+        <rect x="66" width="6" height="100%" y="100%" />
+        <rect x="72" width="6" height="100%" y="100%" />
+        <rect x="78" width="6" height="100%" y="100%" />
+        <rect x="84" width="6" height="100%" y="100%" />
+        <rect x="90" width="6" height="100%" y="100%" />
+      </g>
+    </svg>
+  </a>
+  <a href="#">
+    <span class="label">About</span>
+    <box-icon class="icon" name="user-circle" color="white" size="50px"></box-icon>
+    <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+      <g class="pink">
+        <rect x="0" width="6" height="100%" y="-100%" />
+        <rect x="6" width="6" height="100%" y="-100%" />
+        <rect x="12" width="6" height="100%" y="-100%" />
+        <rect x="18" width="6" height="100%" y="-100%" />
+        <rect x="24" width="6" height="100%" y="-100%" />
+        <rect x="30" width="6" height="100%" y="-100%" />
+        <rect x="36" width="6" height="100%" y="-100%" />
+        <rect x="42" width="6" height="100%" y="-100%" />
+        <rect x="48" width="6" height="100%" y="-100%" />
+        <rect x="54" width="6" height="100%" y="-100%" />
+        <rect x="60" width="6" height="100%" y="-100%" />
+        <rect x="66" width="6" height="100%" y="-100%" />
+        <rect x="72" width="6" height="100%" y="-100%" />
+        <rect x="78" width="6" height="100%" y="-100%" />
+        <rect x="84" width="6" height="100%" y="-100%" />
+        <rect x="90" width="6" height="100%" y="-100%" />
+      </g>
+      <g class="blue">
+        <rect x="0" width="6" height="100%" y="100%" />
+        <rect x="6" width="6" height="100%" y="100%" />
+        <rect x="12" width="6" height="100%" y="100%" />
+        <rect x="18" width="6" height="100%" y="100%" />
+        <rect x="24" width="6" height="100%" y="100%" />
+        <rect x="30" width="6" height="100%" y="100%" />
+        <rect x="36" width="6" height="100%" y="100%" />
+        <rect x="42" width="6" height="100%" y="100%" />
+        <rect x="48" width="6" height="100%" y="100%" />
+        <rect x="54" width="6" height="100%" y="100%" />
+        <rect x="60" width="6" height="100%" y="100%" />
+        <rect x="66" width="6" height="100%" y="100%" />
+        <rect x="72" width="6" height="100%" y="100%" />
+        <rect x="78" width="6" height="100%" y="100%" />
+        <rect x="84" width="6" height="100%" y="100%" />
+        <rect x="90" width="6" height="100%" y="100%" />
+      </g>
+    </svg>
+  </a>
+  <a href="#">
+    <span class="label">Contact</span>
+    <box-icon class="icon" name="envelope" color="white" size="50px"></box-icon>
+    <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+      <g class="pink">
+        <rect x="0" width="6" height="100%" y="-100%" />
+        <rect x="6" width="6" height="100%" y="-100%" />
+        <rect x="12" width="6" height="100%" y="-100%" />
+        <rect x="18" width="6" height="100%" y="-100%" />
+        <rect x="24" width="6" height="100%" y="-100%" />
+        <rect x="30" width="6" height="100%" y="-100%" />
+        <rect x="36" width="6" height="100%" y="-100%" />
+        <rect x="42" width="6" height="100%" y="-100%" />
+        <rect x="48" width="6" height="100%" y="-100%" />
+        <rect x="54" width="6" height="100%" y="-100%" />
+        <rect x="60" width="6" height="100%" y="-100%" />
+        <rect x="66" width="6" height="100%" y="-100%" />
+        <rect x="72" width="6" height="100%" y="-100%" />
+        <rect x="78" width="6" height="100%" y="-100%" />
+        <rect x="84" width="6" height="100%" y="-100%" />
+        <rect x="90" width="6" height="100%" y="-100%" />
+      </g>
+      <g class="blue">
+        <rect x="0" width="6" height="100%" y="100%" />
+        <rect x="6" width="6" height="100%" y="100%" />
+        <rect x="12" width="6" height="100%" y="100%" />
+        <rect x="18" width="6" height="100%" y="100%" />
+        <rect x="24" width="6" height="100%" y="100%" />
+        <rect x="30" width="6" height="100%" y="100%" />
+        <rect x="36" width="6" height="100%" y="100%" />
+        <rect x="42" width="6" height="100%" y="100%" />
+        <rect x="48" width="6" height="100%" y="100%" />
+        <rect x="54" width="6" height="100%" y="100%" />
+        <rect x="60" width="6" height="100%" y="100%" />
+        <rect x="66" width="6" height="100%" y="100%" />
+        <rect x="72" width="6" height="100%" y="100%" />
+        <rect x="78" width="6" height="100%" y="100%" />
+        <rect x="84" width="6" height="100%" y="100%" />
+        <rect x="90" width="6" height="100%" y="100%" />
+      </g>
+    </svg>
+  </a>
+</nav>
